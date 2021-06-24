@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cadastre-se</title>
+</head>
+<body onload="focusNome()">
+    <div id="linear"></div>
+        <form action="" method="post" name="formcadastro">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <h1>Cadastre-se</h1>
+            <div id="dados">
+                <fieldset class="campos nome">
+                    <legend class="leg nome">Nome</legend>
+                    <input type="text" name="nome" class="inp nomeInp" onkeypress="return valNome()">
+                </fieldset>
+                <fieldset class="campos ano_nasc">
+                    <legend class="leg ano_nasc">Ano de Nascimento</legend>
+                    <input type="number" name="nascimento" class="inp ano_nasc" placeholder="Ex.: 2002">
+                </fieldset>
+                <fieldset class="campos bairro">
+                    <legend class="leg bairro">Bairro</legend>
+                    <input type="text" name="bairro" class="inp bairro" onkeypress="return valBairro()">
+                </fieldset>
+                <button type="submit" onclick="return valTudo()">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+</body>
+</html>
